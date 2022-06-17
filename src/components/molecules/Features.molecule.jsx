@@ -28,45 +28,25 @@ const Features = ({ mainCharacter, title, covid }) => {
             </Grid>
           </Grid>
         )}
-        <Paper
-          sx={{
-            p: 2,
-            display: "flex",
-            flexDirection: "column",
-            height: "35vh",
-            backgroundColor: "#FFFFFF",
-            justifyContent: "center",
-          }}
-        >
-          <Grid container marginTop={1}>
-            <Grid item xs={12} sm={12} md={12} lg={12}>
-              <Typography variant="h4" color="#005F7F" align="center">
-                <b>{mainCharacter}</b>
-              </Typography>
-              <Typography variant="inherit" color="#707070" align="center">
-                <b>{title}</b>
-              </Typography>
-            </Grid>
+
+        <Grid container marginTop={1}>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Typography variant="h4" color="#005F7F" align="center">
+              <b>{mainCharacter}</b>
+            </Typography>
+            <Typography variant="inherit" color="#707070" align="center">
+              <b>{title}</b>
+            </Typography>
           </Grid>
-        </Paper>
-        <Paper
-          sx={{
-            p: 2,
-            display: "flex",
-            flexDirection: "column",
-            height: "35vh",
-            backgroundColor: "#FFFFFF",
-            justifyContent: "flex-end",
-          }}
-        >
-          <Grid container marginTop={1}>
-            <Grid item xs={12} sm={12} md={12} lg={12}>
-              <Typography variant="string" color="#005F7F" align="right">
-                {new Date().toDateString()}
-              </Typography>
-            </Grid>
+        </Grid>
+
+        <Grid container marginTop={1}>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Typography variant="string" color="#005F7F" align="center">
+              {new Date().toDateString()}
+            </Typography>
           </Grid>
-        </Paper>
+        </Grid>
       </Paper>
     </Grid>
   );

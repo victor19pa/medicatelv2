@@ -2,11 +2,11 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
-// import useScreenSize from "../../hooks/useScreenSize";
+import useScreenSize from "../../hooks/useScreenSize";
 import { EnterpriseLogo, EnterpriseMainInfo } from "../molecules";
 
 const EnterpriseInfo = () => {
-  // const { width } = useScreenSize();
+  const { width } = useScreenSize();
   return (
     <Grid item xs={12} sm={12} md={12} lg={12}>
       <Paper
@@ -14,7 +14,7 @@ const EnterpriseInfo = () => {
           p: 2,
           display: "flex",
           flexDirection: "column",
-          height: "35vh",
+          height: width < 385 ? "52vh" : "35vh",
           backgroundColor: "#FFFFFF",
         }}
       >

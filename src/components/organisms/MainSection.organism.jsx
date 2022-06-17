@@ -22,7 +22,7 @@ const MainSection = () => {
           <Features mainCharacter={citas_agendadas} title="Citas Agendadas" />
           <Features
             mainCharacter={`${positivas}/${negativas}`}
-            title="Positivos/Negativos"
+            title="Positivos / Negativos"
             covid={true}
           />
         </Grid>
