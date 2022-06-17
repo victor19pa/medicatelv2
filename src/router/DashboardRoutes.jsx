@@ -1,11 +1,11 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { DashboardScreen } from "../screens";
+import { CollaboratorScreen, DashboardScreen } from "../screens";
 
 const DashboardRoutes = () => {
   return (
     <Routes>
       <Route path="/inicio" element={<DashboardScreen />} />
-      {/* <Route path="/colaboradores" element={<CollaboratorScreen />} /> */}
+      <Route path="/colaboradores" element={<CollaboratorScreen />} />
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );
