@@ -2,8 +2,8 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { LoginScreen } from "../screens";
 import DashboardRoutes from "./DashboardRoutes";
-import PublicRoute from "./PublicRoute";
-import PrivateRoute from "./PrivateRoute";
+// import PublicRoute from "./PublicRoute";
+// import PrivateRoute from "./PrivateRoute";
 
 const AppRouter = () => {
   return (

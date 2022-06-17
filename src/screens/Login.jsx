@@ -33,7 +33,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await login(user);
-      // navigate("/inicio");
+      navigate("/inicio");
     } catch (error) {
       console.log(error);
     }
