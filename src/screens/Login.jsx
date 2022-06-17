@@ -19,6 +19,7 @@ const Login = () => {
     user: "",
     password: "",
   });
+  const [error, setError] = useState(false);
 
   const { login } = useContext(UserContext);
 
@@ -32,10 +33,12 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setError(false);
       await login(user);
       navigate("/inicio");
     } catch (error) {
       console.log(error);
+      setError(true);
     }
   };
 
@@ -45,7 +48,7 @@ const Login = () => {
       <Grid
         item
         xs={false}
-        sm={4}
+        sm={false}
         md={6}
         sx={{
           backgroundImage:
@@ -80,25 +83,55 @@ const Login = () => {
             onSubmit={handleSubmit}
             sx={{ mt: 1 }}
           >
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="user"
-              label="Username"
-              name="user"
-              onChange={handleInputChange}
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="password"
-              label="Password"
-              name="password"
-              type="password"
-              onChange={handleInputChange}
-            />
+            {error ? (
+              <>
+                <TextField
+                  error
+                  helperText="Usuario incorrecto."
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="user"
+                  label="Username"
+                  name="user"
+                  onChange={handleInputChange}
+                />
+                <TextField
+                  error
+                  helperText="Contraseña incorrecta."
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="password"
+                  label="Password"
+                  name="password"
+                  type="password"
+                  onChange={handleInputChange}
+                />
+              </>
+            ) : (
+              <>
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="user"
+                  label="Username"
+                  name="user"
+                  onChange={handleInputChange}
+                />
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="password"
+                  label="Password"
+                  name="password"
+                  type="password"
+                  onChange={handleInputChange}
+                />
+              </>
+            )}
             <Button
               type="submit"
               fullWidth
