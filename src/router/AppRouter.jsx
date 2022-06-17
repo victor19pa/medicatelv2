@@ -3,8 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { LoginScreen } from "../screens";
 import DashboardRoutes from "./DashboardRoutes";
 import PublicRoute from "./PublicRoute";
-// import DashboardRoutes from "./DashboardRoutes";
-// import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./PrivateRoute";
 
 const AppRouter = () => {
   return (
@@ -18,7 +17,7 @@ const AppRouter = () => {
             </PublicRoute>
           }
         /> */}
-        <Route path="/" element={<LoginScreen />} />
+        <Route path="/login" element={<LoginScreen />} />
         <Route
           path="/*"
           element={
