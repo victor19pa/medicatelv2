@@ -24,7 +24,7 @@ const CardCollab = ({ colaboradorData }) => {
             p: 2,
             display: "flex",
             flexDirection: "column",
-            height: "35vh",
+            height: width < 500 ? "40vh" : "45vh",
             backgroundColor: "#FFFFFF",
           }}
         >
