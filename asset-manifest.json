@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/medicatelv2/static/js/main.ed099bb2.js",
+    "main.js": "/medicatelv2/static/js/main.36ce3438.js",
     "static/media/user.png": "/medicatelv2/static/media/user.e582e4ba7aae2cecd658.png",
     "static/media/logo2.webp": "/medicatelv2/static/media/logo2.92627550f4adebbddde1.webp",
     "static/media/logo1.webp": "/medicatelv2/static/media/logo1.1a8b463c91cf085a858b.webp",
     "index.html": "/medicatelv2/index.html",
-    "main.ed099bb2.js.map": "/medicatelv2/static/js/main.ed099bb2.js.map"
+    "main.36ce3438.js.map": "/medicatelv2/static/js/main.36ce3438.js.map"
   },
   "entrypoints": [
-    "static/js/main.ed099bb2.js"
+    "static/js/main.36ce3438.js"
   ]
 }
