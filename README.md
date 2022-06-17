@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+Proyecto desplegado en Github Pages [MedicatelV2 Github Pages](https://victor19pa.github.io/medicatelv2/) -
+https://victor19pa.github.io/medicatelv2/
+
+opcion 2 netlify:
+[Medicatel Netlify](https://medicatelv2.netlify.app/) -
+https://medicatelv2.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Version 2 de pagina web Medicatel
